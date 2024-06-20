@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./lib/bootstrap.min.css">
+  <title>Modal</title>
+</head>
+<body>
+  <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal">
+    Clique para abrir o modal
+  </button>
+  <div class="modal" id="modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Modal</h5>
+          <!-- <button class="btn-close" data-bs-dismiss="modal"></button> -->
+        </div>
+        <div class="modal-body">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aliquid nisi numquam quo, minus sapiente? Debitis assumenda nesciunt nostrum reiciendis odit explicabo, ducimus cupiditate quod. Minus quasi sint repudiandae quam.</p>
+        </div>
+        <div class="modal-footer">
+          <!-- <h5>Rodapé do modal</h5> -->
+          <button class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+          <button class="btn btn-success" data-bs-dismiss="modal">Salvar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- modal 2 -->
+  <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal-2">
+    Modal 2
+  </button>
+  <div class="modal" id="modal-2" data-bs-backdrop="static">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Modal</h5>
+          <button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aliquid nisi numquam quo, minus sapiente? Debitis assumenda nesciunt nostrum reiciendis odit explicabo, ducimus cupiditate quod. Minus quasi sint repudiandae quam.</p>
+        </div>
+        <div class="modal-footer">
+          <h5>Rodapé do modal</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./lib/bootstrap.bundle.min.js"></script>
+
+  <!-- iremos trabalhar com o evento `show.bs.modal` no primeiro modal, adicionando um tempode 3segundo para ele ser carregado na página. -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const modal =new bootstrap.Modal("#modal")
+      setTimeout(function() {
+        modal.show()
+      }, 3000);
+    })
+  </script>
+</body>
+</html>

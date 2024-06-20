@@ -1,0 +1,7 @@
+.container {
+  display: flex;
+}
+
+.dropdown {
+  margin: 10px;
+}

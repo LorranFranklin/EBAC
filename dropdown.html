@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./lib/bootstrap.min.css" />
+    <link rel="stylesheet" href="./stilo.css" />
+    <title>Dropdown</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="dropdown">
+        <button
+          class="btn btn-primary dropdown-toggle"
+          type="button"
+          id="dropdownMenuButton1"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Cadastrar 1
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Cadastrar</a></li>
+          <li><a class="dropdown-item" href="#">Listar</a></li>
+          <li><a class="dropdown-item" href="#">Alterar</a></li>
+          <li><a class="dropdown-item" href="#">Deletar</a></li>
+        </ul>
+      </div>
+      <!-- button 2, temos 2 botões aqui, onde podemos direcionar o usuario para as outras paginas, um poderia levar o cliente para a tela de cadastro, e o outro poderia levar o cliente para a tela de listagem. -->
+      <div class="dropdown btn-group">
+        <button class="btn btn-primary">Cadastrar 2</button>
+        <button
+          class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+          data-bs-toggle="dropdown"
+          type="button"
+          aria-expanded="false"
+          id="dropdownMenuButton2"
+        ></button>
+
+        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+          <li><a class="dropdown-item" href="#">Cadastrar</a></li>
+          <li><a class="dropdown-item" href="#">Listar</a></li>
+          <li><a class="dropdown-item" href="#">Alterar</a></li>
+          <li><a class="dropdown-item" href="#">Deletar</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
