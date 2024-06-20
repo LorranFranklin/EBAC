@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.dev img {
+  height: 80px;
+}
+
+.dev {
+  background-color: #000;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 6em;
+  padding: .5em;
+}
+
+.formulario {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 5em;
+  padding: .5em;
+  font-size: 1.5em;
+  font-family: playfair display;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.5rem;
+  padding: 1rem 0;
+  gap: .5em;
+  width: 500px;
+  margin: 0 auto;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: .6em;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.1em;
+}
+
+#msg {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+button {
+  width: 100%;
+  padding: .6em;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #1e40af;
+  color: #fff;
+}
+
+@media (max-width: 448px) {
+  .dev img { 
+    max-width: 250px;
+    max-height: 3em;
+  }
+  #form {
+    width: 100%;
+    padding: 1rem;
+  }
+  
+}
